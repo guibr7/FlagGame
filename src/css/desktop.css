@@ -1,0 +1,106 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%
+}
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+   background-color: #f4f4f4;
+}
+header>h1{
+    font-family: "Patrick Hand", cursive;
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1%;
+
+}
+#scoreDiv{
+margin-top: 2rem;
+text-align: center;
+}
+#tese{
+  
+}
+#errorIcon{
+    display: inline-block;
+    width: 47%;
+    height: 47%;
+}
+#rightIcon{
+    display: inline-block;
+    width: 47%;
+    height: 47%;
+}
+.points{
+    font-family: "Patrick Hand", cursive;
+    display: inline;
+    font-size: 2.1rem;
+    margin-left: 0.6rem;
+}
+#GroupRightDiv{
+    display: inline-block;
+    margin-right: 9rem;
+}
+#GroupErrorDiv{
+    display: inline-block;
+    margin-left: 9rem;
+}
+#error{
+    
+}
+#right{
+
+}
+
+#flag{
+    margin: auto;
+    margin: 60px auto 60px auto;
+    display: block;
+    width: 19% ;
+}
+
+#responseInput{
+    font-family: "Patrick Hand", cursive;
+    text-align: center;
+    font-size: 1.8rem;
+    vertical-align: baseline;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: .16px;
+    border-radius: 0;
+    outline: 2px solid transparent;
+    width: 16%;
+    height: 40px;
+    border: none;
+    border-bottom: 1.2px solid #000000;
+    padding: 0 16px;
+    color: #000000;
+    display: block;
+    margin: auto;
+    background-color: #f4f4f4 ;
+}
+#responseInput::placeholder{
+    color: rgba(128, 128, 128, 0.572);
+}
+#submitButton{
+    display: none;
+    background-color: #f4f4f4 ;
+}
+#skipButton{
+    display: block;
+    font-family: "Patrick Hand", cursive;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border: none;
+    background-color: none;
+    padding: none;
+    margin: 6% auto;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent ;
+}

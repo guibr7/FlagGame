@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags</title>
+    <link rel="stylesheet" href="src/css/mobile.css" media="screen and (orientation:portrait)">
+    <link rel="stylesheet" href="src/css/desktop.css" media="screen and (orientation:landscape)">
+</head>
+<body>
+    <header>
+        <h1>Qual é o país?</h1>
+    </header>
+
+    <div id="scoreDiv">
+            <div id="GroupRightDiv">
+                <img id="errorIcon" src="src/image/twemoji_check-mark-button (1).png" alt="Acertos">
+                <p id="error" class="points">3</p>
+            </div>
+            <div id="GroupErrorDiv">
+                <img id="rightIcon" src="src/image/twemoji_cross-mark.png" alt="Erros">
+                <p id="error" class="points">1</p>
+            </div>
+        <p id="right" class="points"></p>
+    </div>
+    <img id="flag" src="src/image/br.png" alt="Bandeira">
+    <input id="responseInput" type="text" placeholder="Escreva aqui">
+    <button id="submitButton" type="submit">Enviar</button>
+    <button id="skipButton">Pular</button>
+</body>
+</html>
