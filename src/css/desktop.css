@@ -6,81 +6,81 @@
 html{
     font-size: 62.5%
 }
-
-
-
-
 body{
    background-color: #f6f5f5;
    font-family: "Lilita One", sans-serif;
 }
+
 header>h1{
     font-size: 3rem;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 1.5%;
 }
 #scoreDiv{
-margin-top: 5rem;
-margin-bottom: 6rem;
+margin-top: 1.5%;
+margin-bottom: 1rem;
 text-align: center;
-}
-#tese{
-  
-}
-
-#shrugging{
-    
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 #errorIcon{
     display: inline-block;
-    width: 47%;
-    height: 47%;
+    width: 22px;
+    height: 22px;
 }
 #rightIcon{
     display: inline-block;
-    width: 47%;
-    height: 47%;
+    width: 22px;
+    height: 22px;
 }
+#doubtIcon{
+    display: inline-block;
+    width: 27.8px;
+    height: 27.8px;
+}
+
 .points{
-    font-family: "Patrick Hand", cursive;
     display: inline;
-    font-size: 2.1rem;
-    margin-left: 0.6rem;
+    font-size: 1.9rem;
+    margin-left: 0.5rem;
+}
+
+#jump{
+
 }
 #GroupRightDiv{
     display: inline-block;
-    margin-right: 9rem;
+    margin: none;
+    margin: 4rem;
 }
 #GroupErrorDiv{
     display: inline-block;
-    margin-left: 9rem;
+    margin: 4rem;
 }
-#error{
-    
-}
-#right{
-
+#doubtGroup{
+   display: inline-block;
+   margin: 4rem;
 }
 
 #flag{
-    margin: auto;
+    margin-top: .1%;
     margin: auto;
     display: block;
-    width: 22% ;
-    height: 22%;
+    max-width:18% ;
 }
 
 #responseInput{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     vertical-align: baseline;
     font-weight: bold;
     line-height: 1.29;
     letter-spacing: .16px;
     border-radius: 0;
     outline: 2px solid transparent;
-    width: 16%;
+    width: 25%;
     height: 40px;
     border: none;
     border-bottom: 1.2px solid #000000;
@@ -88,9 +88,10 @@ text-align: center;
     color: #000000;
     display: block;
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 5%;
     background-color: #f4f4f4 ;
 }
+
 #responseInput::placeholder{
     color: #80808092;
 }
@@ -105,7 +106,7 @@ text-align: center;
     border: none;
     background-color: none;
     padding: none;
-    margin: 8% auto;
+    margin: 5% auto;
     outline: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent ;

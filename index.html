@@ -14,27 +14,25 @@
     </header>
 
     <div id="scoreDiv">
+
         <div id="GroupRightDiv">
             <img id="errorIcon" src="src/image/twemoji_check-mark-button (1).png" alt="Acertos">
             <p id="acerto" class="points">0</p>
         </div>
-        <div id="doubtDiv">
-            <div id="doubtGroup">
-                <img id="doubtIcon" src="src/image/Vector.png" alt="Acertos">
-                <p id="acerto" class="points">0</p>
-            </div>
-        </div>
+        
         <div id="GroupErrorDiv">
             <img id="rightIcon" src="src/image/twemoji_cross-mark.png" alt="Erros">
             <p id="erro" class="points">0</p>
         </div>
-        <p id="right" class="points"></p>
-    </div>
 
-   <img id="flag" src="" alt="Bandeira">
- 
+        <div id="doubtGroup">
+            <img id="doubtIcon" src="src/image/twemoji_man-shrugging-medium-skin-tone.png" alt="Acertos">
+            <p id="jump" class="points">0</p>
+        </div>
+    </div>
+    <img id="flag" src="" alt="Bandeira">
     <form id="form" action="#">
-        <input id="responseInput"  type="text" placeholder="Escreva aqui">
+        <input id="responseInput" value=""  type="text" placeholder="Escreva aqui">
         <input type="submit" id='submitButton' >
     </form>
     <button id="skipButton">Pular</button>
