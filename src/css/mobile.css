@@ -62,18 +62,19 @@ text-align: center;
     margin: 60px auto 30px auto;
     display: block;
     width: 55% ;
+    height: 55%;
 }
 
 #responseInput{
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     vertical-align: baseline;
     font-weight: bold;
     line-height: 1.29;
     letter-spacing: .16px;
     border-radius: 0;
     outline: 2px solid transparent;
-    width: 50%;
+    width: 40%;
     height: 40px;
     border: none;
     border-bottom: 1.2px solid #000000;
@@ -99,7 +100,7 @@ text-align: center;
     border: none;
     background-color: none;
     padding: none;
-    margin: 25% auto;
+    margin: 50% auto;
     outline: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent ;
