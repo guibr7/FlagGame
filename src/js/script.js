@@ -14,15 +14,16 @@ async function getCountry(){
     displayFlag(ResponseAPI);
 }
 
-const divFlag = document.querySelector("#flag")
+let divFlag = document.getElementById('flag')
 
 function displayFlag(ResponseAPI){
   responseInput.style.color="#000000";
   country = ResponseAPI[Math.floor(Math.random()*250)];
-  console.log(country.translations.por.common);
+  console.log(country.translations.por.common); //resposta
   languageCountry = (country.translations.por.common).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   flag = country.flags.png;
-  divFlag.setAttribute("src",flag);
+  console.log(flag)
+  divFlag.style.backgroundImage = `url(${flag})`
 }
 
 document.querySelector("#skipButton").addEventListener("click",(event)=>{ restartGame()})
@@ -52,7 +53,7 @@ document.querySelector("#form").addEventListener("submit",function(event){
     erro.innerHTML = pontuacao.erros;
     document.querySelector("#skipButton").setAttribute('disabled','')
     responseInput.setAttribute('disabled','')
-    responseInput.value = (`Errado! Resposta certa: ${country.translations.por.common}`)
+    responseInput.value = (`Resposta correta: ${country.translations.por.common}`)
     setTimeout(()=>{
       responseInput.value = ''
       document.querySelector("#skipButton").removeAttribute('disabled');

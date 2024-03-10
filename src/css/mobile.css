@@ -6,113 +6,128 @@
 html{
     font-size: 62.5%
 }
-
-
 body{
-   background-color: #f4f4f4;
-
+   background-color: #f6f5f5;
+   font-family: "Lilita One", sans-serif;
+   background-image: url(../image/wallpaper.jpg);
+    background-position: 38%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
 }
-header>h1{
-    font-weight: normal;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 8%;
 
+header>h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
 }
 #scoreDiv{
-    margin-top: 1.5%;
+    margin-top: 5%;
     margin-bottom: 1rem;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    }
-    
-    #errorIcon{
-        display: inline-block;
-        width: 22px;
-        height: 22px;
-    }
-    #rightIcon{
-        display: inline-block;
-        width: 22px;
-        height: 22px;
-    }
-    #doubtIcon{
-        display: inline-block;
-        width: 27.8px;
-        height: 27.8px;
-    }
-    
+    color: white;
+}
+
+#errorIcon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+#rightIcon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+#doubtIcon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
 .points{
     display: inline;
-    font-size: 2.1rem;
-    margin-left: 0.6rem;
+    font-size: 1.9rem;
+    margin-left: 0.5rem;
+}
+
+#jump{
+
 }
 #GroupRightDiv{
     display: inline-block;
-    margin-right: 4rem;
+    margin: none;
+    margin: 4rem;
 }
 #GroupErrorDiv{
     display: inline-block;
-    margin-left: 4rem;
+    margin: 4rem;
 }
 #doubtGroup{
-    display: inline-block;
-    margin-left: 4rem;
-}
-#error{
-    
-}
-#right{
-
+   display: inline-block;
+   margin: 4rem;
 }
 
 #flag{
+    /*margin-top: .1%;
     margin: auto;
-    margin: 60px auto 30px auto;
     display: block;
-    width: 55% ;
-    height: 55%;
+    max-width:18% ;*/
+    max-width: 250px;
+    height: 213px;
+    background-color: #f6f5f500;
+    margin: auto;
+   background-image: url();
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
 }
 
 #responseInput{
-    text-align: left;
-    font-size: 1.3rem;
+    text-align: center;
+    font-size: 1.4rem;
     vertical-align: baseline;
     font-weight: bold;
     line-height: 1.29;
     letter-spacing: .16px;
     border-radius: 0;
     outline: 2px solid transparent;
-    width: 40%;
-    height: 40px;
+    width: 80%;
+    height: 35px;
     border: none;
     border-bottom: 1.2px solid #000000;
     padding: 0 16px;
-    color: #000000;
+    color: #ffffff;
     display: block;
     margin: auto;
-    background-color: #f4f4f4 ;
+    margin-top: 10%;
+    background-color: #ffffff ;
+    border-radius: 8px;
 }
+
 
 #responseInput::placeholder{
-    color: rgba(128, 128, 128, 0.572);
+    color: #80808092;
 }
-
 #submitButton{
     display: none;
-    background-color: #f4f4f4 ;
 }
 #skipButton{
     display: block;
     font-weight: bold;
+    color: rgb(255, 119, 0);
     font-size: 1.8rem;
     border: none;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0);
     padding: none;
-    margin: 50% auto;
+    margin: auto;
+    margin-top: 10%;
     outline: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent ;
 }
+
