@@ -10,7 +10,6 @@ getCountry()
 async function getCountry(){
     const request = await fetch("https://restcountries.com/v3.1/all");
     const ResponseAPI = await request.json();
-    console.log(ResponseAPI);
     displayFlag(ResponseAPI);
 }
 
@@ -18,11 +17,12 @@ let divFlag = document.getElementById('flag')
 
 function displayFlag(ResponseAPI){
   responseInput.style.color="#000000";
-  country = ResponseAPI[Math.floor(Math.random()*250)];
-  console.log(country.translations.por.common); //resposta
+  let sort = Math.floor(Math.random()*250);
+  country = ResponseAPI[sort];
+    /*console.log(ResponseAPI[sort])
+    console.log(country.translations.por.common);*/
   languageCountry = (country.translations.por.common).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
   flag = country.flags.png;
-  console.log(flag)
   divFlag.style.backgroundImage = `url(${flag})`
 }
 
@@ -38,12 +38,13 @@ document.querySelector("#form").addEventListener("submit",function(event){
     responseInput.style.color="#00d857";
     document.querySelector("#skipButton").setAttribute('disabled','')
     responseInput.setAttribute('disabled','')
+    
     setTimeout(()=>{
       responseInput.value = ''
       document.querySelector("#skipButton").removeAttribute('disabled');
       responseInput.removeAttribute('disabled');
       getCountry()
-    },1200)
+    },3000)
   }
 
   else if(responsev1 == ''){restartGame()}
